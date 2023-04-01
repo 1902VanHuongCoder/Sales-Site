@@ -1,0 +1,61 @@
+body{
+    text-align: justify;
+}
+.navigation{
+    position: relative !important;
+}
+.main_question{
+    margin: 20px;
+}
+.subject{
+    margin-bottom: 10px;
+    font-size: 22px;
+}
+.question1 span{
+    color: blue;
+    font-weight: bold;
+}
+.question1 h3{
+    color: red;
+    margin-bottom: 10px;
+    font-size:21px ;
+}
+.question1 p{
+    margin-bottom: 5px;
+    font-size: 17px;
+    font-weight: bold;
+}
+.question2 h3{
+    color: red;
+    margin-bottom: 10px;
+    font-size:21px ;
+}
+.gird_question{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.gird_question h4{
+    margin-bottom: 10px;
+    color: red;
+}
+.gird_question .grid_unit-price p{
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+/* bảo hành*/
+.grid_guarantee{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 25px;
+    background-color: #be1e2d;
+    color: #fff;
+    padding: 15px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+.grid_guarantee .guarantee_item{ 
+    padding-left: 15px;
+}
+.guarantee_border{
+    border-left: 1px solid white;
+}

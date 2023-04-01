@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='lienhe.css'>
+    <script src='jquery.js'></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+</head>
+
+<body>
+    <header>
+        <div class="more" id="more"><i class="fa-solid fa-list"></i></div>
+        <div class="navigation-wrap" id="navigation-wrap">
+            <div class="navigation">
+                <div class="navigation-logo">
+                    <div class="img"><img src="Logo-removebg-preview.png"></div>
+                    <div class="navigation-form">
+                        <form action="search.html" method="get">
+                            <input type="text" id="search" name="search" placeholder=" Search...">
+                            <i onclick="search()" class="fa fa-search"></i>
+                        </form>
+                    </div>
+                </div>
+                <div class="navigation-content">
+                    <div><a href="http://127.0.0.1:5500/home.html">Trang chủ</a></div>
+                    <div><a href="http://127.0.0.1:5500/lienhe.html">Liên hệ</a></div>
+                    <div onclick="activited_register(),hidden_form_login()" class="cursor-pointer"><a>Đăng ký</a></div>
+                    <div onclick="activited_login(),hidden_form_register()" class="cursor-pointer"><a>Đăng nhập</a></div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <h1 class="title1"><b>LIÊN HỆ</b></h1>
+        <div class="empty"></div>
+        <div class="main">
+            <div class="main_left">
+                <div class="content">
+                    <p>
+                        <b class="main_b"><i class="fa-sharp fa-solid fa-address-card"></i>Anh Ba Store, Quốc lộ 61,
+                            Phụng Hiệp, Hậu Giang, Việt Nam</b> <i>Nếu bạn có góp ý, vui lòng liên hệ bằng thư điện tử
+                            hoặc sử dụng biểu mẫu bên dưới. Xin cảm ơn</i>
+                    </p>
+                </div>
+                <div class="title2">Góp ý</div>
+                <div class="empty"></div>
+                <form name="myForm" class="container" action="lienhe.html" method="get" onsubmit="return validateForm()">
+                    <div class="form-cotainer">
+                        <table class="form-table">
+                            <tbody>
+                                <tr>
+                                    <td>Email:</td>
+                                    <td><input type="email" required name="email"  placeholder="Nhập email của bạn"></td>
+                                </tr>
+                                <tr>
+                                    <td>SDT:</td>
+                                    <td><input  type="number" required name="sdt" id="" minlength="10" placeholder="Số điện thoại..."></td>
+                                </tr>
+                                <tr>
+                                    <td>Mã khách hàng:</td>
+                                    <td><input required type="text" name="code" minlength="8" placeholder="Nhập mã của bạn"></td>
+                                </tr>
+                                <tr>
+                                    <td>Góp ý:</td>
+                                    <td><textarea required name="" id=""  rows="5" placeholder="Nhập góp ý của bạn tại đây!"></textarea></td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td>
+                                        <input type="submit" onclick="submit_form()" value="Gửi">
+                                        <input type="reset" value="Hủy">
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </form>
+            </div>
+            <div class="main_right">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d62860.63928560475!2d105.71637042356994!3d10.034184408540401!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31a0629f6de3edb7%3A0x527f09dbfb20b659!2zQ-G6p24gVGjGoSwgTmluaCBLaeG7gXUsIEPhuqduIFRoxqEsIFZp4buHdCBOYW0!5e0!3m2!1svi!2s!4v1668317419129!5m2!1svi!2s"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+
+        </div>
+
+    </main>
+    <footer>
+        <div class="footer">
+            <div class="infor_footer">
+                <div class="question_footer">
+                    <h2> Những câu hỏi thường gặp: </h2>
+                    <div class="question_content_footer">
+                        <ul>
+                            <li><a href="question.html">Hình thức vận chuyển như thế nào?</a></li>
+                            <li><a href="question.html">Có bảo hành cho khách hàng hay không?</a></li>
+                            <li><a href="question.html">Thời gian giao hàng là bao lâu?</a></li>
+                            <li><a href="question.html">Nếu sản phẩm không chất lượng có được đổi trả hay là không?</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="address_footer">
+                    <h2>Địa chỉ</h2>
+                    <div class="address_content_footer">
+                        <div><i class="fa-solid fa-location-dot" style="color: red"></i> Anh Ba Store, Quốc lộ 61, Phụng
+                            Hiệp, Hậu Giang, Việt Nam</div>
+                        <div><i class="fa-brands fa-facebook" style="color: blue"></i> Facebook: Tô Văn Hưởng</div>
+                        <div><i class="fa-brands fa-github"></i> Github: 1902VanHuongCoder</div>
+                        <div> <i class="fa-solid fa-envelope" style="color: rgb(214, 160, 9)"></i> Email:
+                            huongb2105616@student.ctu.edu.vn</div>
+                        <div><i class="fa-solid fa-phone" style="color: rgb(241, 47, 12)"></i> Phone: 0334745377</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- //form dang nhap -->
+    <div id="login-window">
+        <div class="x-button-form-login">
+            <i class="fa-solid fa-x" id="x" onclick="hidden_form_login()"></i>
+        </div>
+        <div id="login-form">
+            <div class="eye-icon">
+                <i class="fa-solid fa-eye" onclick="showpass_login()"></i>
+                <i class="fa-solid fa-eye-slash" onclick="hidepass_login()"></i>
+            </div>
+            <form action="home.html" method="post" enctype="application/x-www-form-urlencoded" id="form"
+                onsubmit="return login();">
+                <div class="name-form-log-in">
+                    <h1>ĐĂNG NHẬP</h1>
+                </div>
+                <h3>Email</h3>
+                <input type="text" placeholder="Vui lòng nhập Email..." size="30" id="emaillog">
+                <h3>Mật khẩu</h3>
+                <input type="password" placeholder="Vui lòng nhập mật khẩu..." id="passlog">
+                <div class="bottom">
+                    <div class="bottom-wrapper">
+                        <button type="submit" onclick="infor_log()">Đăng nhập</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <!-- //from dang ki -->
+    <div id="register-window">
+        <div class="x-button-absolute">
+            <i class="fa-solid fa-x" class="x-button" onclick="hidden_form_register()"></i>
+        </div>
+        <div id="register-form">
+            <form action="home.html" method="post" enctype="application/x-www-form-urlencoded" id="form"
+                onsubmit="return register();">
+                <div class="name-form-wrapper">
+                    <h1 class="name-form">ĐĂNG KÍ </h1>
+                </div>
+                <div class="input-wrapper">
+                    <div class="email-icon">
+                        <i class="fa-solid fa-envelope"></i>
+                    </div>
+                    <div class="pass-icon">
+                        <i class="fa-solid fa-eye" onclick="showpass_register()"></i>
+                        <i class="fa-solid fa-eye-slash" onclick="hidepass_register()"></i>
+                    </div>
+                    <div class="pen-icon">
+                        <i class="fa-solid fa-pen"></i>
+                    </div>
+                    <h3>Email</h3>
+                    <input type="text" placeholder="Vui lòng nhập Email..." size="30" id="emailreg">
+                    <h3>Mật khẩu</h3>
+                    <input type="password" placeholder="Vui lòng nhập mật khẩu..." id="passreg">
+                    <h3>Nhập lại mật khẩu</h3>
+                    <input type="password" placeholder="Vui lòng nhập lại mật khẩu..." id="repassreg">
+                    <div class="bottom">
+                        <div class="button-wrapper">
+                            <button type="reset">Hủy</button>
+                            <button type="submit" onclick="infor()">Đăng kí</button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+<script src="home.js"></script>
+
+</html>

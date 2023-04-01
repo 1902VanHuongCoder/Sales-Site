@@ -1,0 +1,1340 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Điện thoại - Laptop cũ</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='home.css'>
+    <script src='jquery.js'></script>
+</head>
+
+<body onload="hidden_button_logout()">
+    <header>
+        <div class="more" id="more"><i class="fa-solid fa-list"></i></div>
+        <div class="navigation-wrap" id="navigation-wrap">
+            <div class="navigation">
+                <div class="navigation-logo">
+                    <div class="img"><img src="Logo-removebg-preview.png"></div>
+                    <div class="navigation-form">
+                        <form action="search.html" method="get">
+                            <input type="text" id="search" name="search" placeholder=" Search...">
+                            <i onclick="search()" class="fa fa-search"></i>
+                        </form>
+                    </div>
+                </div>
+                <div class="navigation-content">
+                    <div><a href="">Trang chủ</a></div>
+                    <div><a href="#main_product">Giảm giá</a></div>
+                    <div><a href="#main_phone">Điện thoại</a></div>
+                    <div><a href="#Laptop">Laptop</a></div>
+                    <div><a href="http://127.0.0.1:5500/lienhe.html">Liên hệ</a></div>
+                    <div onclick="activited_register(),hidden_form_login()" class="cursor-pointer" id="button_login">
+                        <a>Đăng ký</a>
+                    </div>
+                    <div onclick="activited_login(),hidden_form_register()" class="cursor-pointer" id="button_register">
+                        <a>Đăng nhập</a>
+                    </div>
+                    <div onclick="hidden_button_logout()" class="cursor-pointer" id="button_logout">
+                        <a>Đăng xuất</a>
+                    </div>
+
+                    <div class="click" id="don_hang" onclick="document.getElementById('don').style.display='block'">
+                        <button onclick="Cancle()"><i class="fa-solid fa-cart-shopping"></i></button>
+                        <div id="clicked"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="showcase">
+            <div class="showcase-title">
+                <p>ANH BA STORE</p>
+                <p>Tận tâm - Uy Tín - Chất Lượng</p>
+                <p>Cửa hàng mua bán điện thoại cũ chất lượng</p>
+            </div>
+            <img src="Members_photo/istockphoto-892302012-612x612.jpg">
+        </div>
+    </header>
+
+    <main>
+        <div id="main_product" class="main_product">
+            <div class="product">
+                <div class="container_name_sale">
+                    <div class="name_sale">
+                        <div>
+                            <span>Đại hạ giá vào 12 - 12 - 2022 với nhiều ưu đãi bất ngờ!</span>
+                            <span>Cửa hàng ưu đãi 30% với đối tượng là sinh viên học sinh trong nội ô thành phố Cần
+                                Thơ</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid_product">
+                    <div class="product_items">
+                        <div class="product_item">
+                            <img src="ảnh điện thoại/IPhone 13 Pro Max.jpg">
+                            <div class="name_product">
+                                <a href="Chi tiết sản phẩm/IPhone 13 Pro Max 512GB.html">
+                                    <h3>IPhone 13 Pro Max</h3>
+                                    <p>Tình Trạng : 96%</p>
+                                </a>
+                                <div class="unit_price">
+                                    <p><span style="text-decoration: line-through;">12.000000</span><span>đ</span></p>
+                                    <p><span style="color : red">10.000000</span><span>đ</span></p>
+                                </div>
+                                <div class="flex_product">
+                                    <button class="btn"><i class="fa-solid fa-heart"></i></button>
+                                    <div class="stars_product">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                </div>
+                                <p>1.365 đã bán</p>
+                                <button class="button" onclick="Buy(),check_login()">ĐẶT HÀNG</button>
+                            </div>
+                        </div>
+                        <div class="product_item">
+                            <img src="ảnh điện thoại/Samsung Galaxy A04s.jpg">
+                            <div class="name_product">
+                                <a href="Chi tiết sản phẩm/Samsung Galaxy A04s.html">
+                                    <h3>Samsung Galaxy A04s</h3>
+                                    <p>Tình Trạng : 90%</p>
+                                </a>
+                                <div class="unit_price">
+                                    <p><span style="text-decoration: line-through;">4.000000</span><span>đ</span></p>
+                                    <p><span style="color : red">2.200000</span><span>đ</span></p>
+                                </div>
+                                <div class="flex_product">
+                                    <button class="btn">
+                                        <i class="fa-solid fa-heart"></i>
+                                    </button>
+                                    <div class="stars_product">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                </div>
+                                <p>670 đã bán</p>
+                                <button class="button" onclick="Buy(),check_login()">ĐẶT HÀNG</button>
+                            </div>
+                        </div>
+                        <div class="product_item">
+                            <img src="ảnh điện thoại/Xiaomi Redmi 9C.webp">
+                            <div class="name_product">
+                                <a href="Chi tiết sản phẩm/xiaomi remi 9c.html">
+                                    <h3>Xiaomi Redmi 9C</h3>
+                                    <p>Tình Trạng : 85%</p>
+                                </a>
+                                <div class="unit_price">
+                                    <p><span style="text-decoration: line-through;">3.000000</span><span>đ</span></p>
+                                    <p><span style="color : red">1.500000</span><span>đ</span></p>
+                                </div>
+                                <div class="flex_product">
+                                    <button class="btn">
+                                        <i class="fa-solid fa-heart"></i>
+                                    </button>
+                                    <div class="stars_product">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                </div>
+                                <p>619 đã bán</p>
+                                <button class="button" onclick="Buy(),check_login()">ĐẶT HÀNG</button>
+                            </div>
+                        </div>
+                        <div class="product_item">
+                            <img src="ảnh điện thoại/Vivo Y33s.webp">
+                            <div class="name_product">
+                                <a href="Chi tiết sản phẩm/vivo.html">
+                                    <h3>Vivo Y33s</h3>
+                                    <p>Tình Trạng : 91%</p>
+                                </a>
+                                <div class="unit_price">
+                                    <p><span style="text-decoration: line-through;">5.000000</span><span>đ</span></p>
+                                    <p><span style="color : red">3.000000</span><span>đ</span></p>
+                                </div>
+                                <div class="flex_product">
+                                    <button class="btn">
+                                        <i class="fa-solid fa-heart"></i>
+                                    </button>
+                                    <div class="stars_product">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                </div>
+                                <p>397 đã bán</p>
+                                <button class="button" onclick="Buy(),check_login()">ĐẶT HÀNG</button>
+                            </div>
+                        </div>
+                        <div class="product_item">
+                            <img src="ảnh laptop/HP 240 G9 i5.jpg">
+                            <div class="name_product">
+                                <a href="Chi tiết sản phẩm/HP 240 G9 i5.html">
+                                    <h3>HP 240 G9 i5 </h3>
+                                    <p>Tình Trạng : 95%</p>
+                                </a>
+                                <div class="unit_price">
+                                    <p><span style="text-decoration: line-through;">12.000000</span><span>đ</span></p>
+                                    <p><span style="color : red">8.000000</span><span>đ</span></p>
+                                </div>
+                                <div class="flex_product">
+                                    <button class="btn">
+                                        <i class="fa-solid fa-heart"></i>
+                                    </button>
+                                    <div class="stars_product">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                </div>
+                                <p>928 đã bán</p>
+                                <button class="button" onclick="Buy(),check_login()">ĐẶT HÀNG</button>
+                            </div>
+                        </div>
+                        <div class="product_item">
+                            <img src="ảnh laptop/Acer Aspire 3 i7.jpg">
+                            <div class="name_product">
+                                <a href="Chi tiết sản phẩm/Acer Aspire 3 i7.html">
+                                    <h3>Acer Aspire 3 i7</h3>
+                                    <p>Tình Trạng : 98%</p>
+                                </a>
+                                <div class="unit_price">
+                                    <p><span style="text-decoration: line-through;">15.000000</span><span>đ</span></p>
+                                    <p><span style="color : red">7.980000</span><span>đ</span></p>
+                                </div>
+                                <div class="flex_product">
+                                    <button class="btn">
+                                        <i class="fa-solid fa-heart"></i>
+                                    </button>
+                                    <div class="stars_product">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                </div>
+                                <p>1.258 đã bán</p>
+                                <button class="button" onclick="Buy(),check_login()">ĐẶT HÀNG</button>
+                            </div>
+                        </div>
+                        <div class="product_item">
+                            <img src="ảnh laptop/Dell Inspiron 15 i3.jpg">
+                            <div class="name_product">
+                                <a href="Chi tiết sản phẩm/Dell Inspiron 15 i3.html">
+                                    <h3>Dell Inspiron 15 i3</h3>
+                                    <p>Tình Trạng : 93%</p>
+                                </a>
+                                <div class="unit_price">
+                                    <p><span style="text-decoration: line-through;">10.000000</span><span>đ</span></p>
+                                    <p><span style="color : red">6.300000</span><span>đ</span></p>
+                                </div>
+                                <div class="flex_product">
+                                    <button class="btn">
+                                        <i class="fa-solid fa-heart"></i>
+                                    </button>
+                                    <div class="stars_product">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                </div>
+                                <p>790 đã bán</p>
+                                <button class="button" onclick="Buy(),check_login()">ĐẶT HÀNG</button>
+                            </div>
+                        </div>
+                        <div class="product_item">
+                            <img src="ảnh laptop/Lenovo Ideapad i5.webp">
+                            <div class="name_product">
+                                <a href="Chi tiết sản phẩm/Lenovo Ideapad i5.html">
+                                    <h3>Lenovo Ideapad i5</h3>
+                                    <p>Tình Trạng : 89%</p>
+                                </a>
+                                <div class="unit_price">
+                                    <p><span style="text-decoration: line-through;">9.000000</span><span>đ</span></p>
+                                    <p><span style="color : red">5.900000</span><span>đ</span></p>
+                                </div>
+                                <div class="flex_product">
+                                    <button class="btn">
+                                        <i class="fa-solid fa-heart"></i>
+                                    </button>
+                                    <div class="stars_product">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                </div>
+                                <p>1.369 đã bán</p>
+                                <button class="button" onclick="Buy(),check_login()">ĐẶT HÀNG</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="main_phone" id="main_phone">
+            <div class="smartphone">
+                <div class="name_phone">
+                    <div class="navigation_name">
+                        <p>Điện thoại nổi bật của Anh Ba Store</p>
+                    </div>
+                    <div class="navigation_phone">
+                        <div id="All"><a>Tất cả</a></div>
+                        <div id="Iphone"><a>Iphone</a></div>
+                        <div id="Samsung"><a>Samsung</a></div>
+                        <div id="Oppo"><a>Oppo</a></div>
+                        <div id="Xiaomi"><a>Xiaomi</a></div>
+                    </div>
+                </div>
+                <div class="phone_item">
+                    <div class="product_items">
+                        <div class="product_item iphone phone">
+                            <img src="ảnh điện thoại/IPhone 12 mini.jpg">
+                            <div class="name_product">
+                                <a href="Chi tiết sản phẩm/iPhone 12 mini 128GB.html">
+                                    <h3>IPhone 12 mini</h3>
+                                    <p>Tình Trạng : 94%</p>
+                                </a>
+                                <div class="unit_price">
+                                    <p><span style="text-decoration: line-through;">11.578000</span><span>đ</span></p>
+                                    <p><span style="color : red">9.050000</span><span>đ</span></p>
+                                </div>
+                                <div class="flex_product">
+                                    <button class="btn">
+                                        <i class="fa-solid fa-heart"></i>
+                                    </button>
+                                    <div class="stars_product">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                </div>
+                                <p>829 đã bán</p>
+                                <button class="button" onclick="Buy(),check_login()">ĐẶT HÀNG</button>
+                            </div>
+                        </div>
+
+                        <div class="product_item samsung phone">
+                            <img src="ảnh điện thoại/Samsung Galaxy A53.jpg">
+                            <div class="name_product">
+                                <a href="Chi tiết sản phẩm/Samsung Galaxy A53 5G 128GB.html">
+                                    <h3>Samsung Galaxy A53</h3>
+                                    <p>Tình Trạng : 88%</p>
+                                </a>
+                                <div class="unit_price">
+                                    <p><span style="text-decoration: line-through;">5.000000</span><span>đ</span></p>
+                                    <p><span style="color : red">3.690000</span><span>đ</span></p>
+                                </div>
+                                <div class="flex_product">
+                                    <button class="btn">
+                                        <i class="fa-solid fa-heart"></i>
+                                    </button>
+                                    <div class="stars_product">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                </div>
+                                <p>489 đã bán</p>
+                                <button class="button" onclick="Buy(),check_login()">ĐẶT HÀNG</button>
+                            </div>
+                        </div>
+
+                        <div class="product_item iphone phone">
+                            <img src="ảnh điện thoại/Iphone 13 mini.webp">
+                            <div class="name_product">
+                                <a href="Chi tiết sản phẩm/iPhone 13 mini 128GB.html">
+                                    <h3>Iphone 13 mini</h3>
+                                    <p>Tình Trạng : 99%</p>
+                                </a>
+                                <div class="unit_price">
+                                    <p><span style="text-decoration: line-through;">13.000000</span><span>đ</span></p>
+                                    <p><span style="color : red">8.545000</span><span>đ</span></p>
+                                </div>
+                                <div class="flex_product">
+                                    <button class="btn">
+                                        <i class="fa-solid fa-heart"></i>
+                                    </button>
+                                    <div class="stars_product">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                </div>
+                                <p>969 đã bán</p>
+                                <button class="button" onclick="Buy(),check_login()">ĐẶT HÀNG</button>
+                            </div>
+                        </div>
+
+                        <div class="product_item oppo phone">
+                            <img src="ảnh điện thoại/OPPO A57.jpg">
+                            <div class="name_product">
+                                <a href="Chi tiết sản phẩm/OPPO A57 64GB.html">
+                                    <h3>OPPO A57</h3>
+                                    <p>Tình Trạng : 92%</p>
+                                </a>
+                                <div class="unit_price">
+                                    <p><span style="text-decoration: line-through;">3.000000</span><span>đ</span></p>
+                                    <p><span style="color : red">2.500000</span><span>đ</span></p>
+                                </div>
+                                <div class="flex_product">
+                                    <button class="btn">
+                                        <i class="fa-solid fa-heart"></i>
+                                    </button>
+                                    <div class="stars_product">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                </div>
+                                <p>437 đã bán</p>
+                                <button class="button" onclick="Buy(),check_login()">ĐẶT HÀNG</button>
+                            </div>
+                        </div>
+
+                        <div class="product_item samsung phone">
+                            <img src="ảnh điện thoại/Samsung Galaxy A23.jpg">
+                            <div class="name_product">
+                                <a href="Chi tiết sản phẩm/Samsung Galaxy A23 6GB.html">
+                                    <h3>Samsung Galaxy A23</h3>
+                                    <p>Tình Trạng : 90%</p>
+                                </a>
+                                <div class="unit_price">
+                                    <p><span style="text-decoration: line-through;">4.780000</span><span>đ</span></p>
+                                    <p><span style="color : red">3.290000</span><span>đ</span></p>
+                                </div>
+                                <div class="flex_product">
+                                    <button class="btn">
+                                        <i class="fa-solid fa-heart"></i>
+                                    </button>
+                                    <div class="stars_product">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                </div>
+                                <p>349 đã bán</p>
+                                <button class="button" onclick="Buy(),check_login()">ĐẶT HÀNG</button>
+                            </div>
+                        </div>
+
+                        <div class="product_item xiaomi phone">
+                            <img src="ảnh điện thoại/Xiaomi Redmi Note 10S.webp">
+                            <div class="name_product">
+                                <a href="Chi tiết sản phẩm/Xiaomi Redmi Note 10S 6GB.html">
+                                    <h3>Xiaomi Redmi Note 10S</h3>
+                                    <p>Tình Trạng : 86%</p>
+                                </a>
+                                <div class="unit_price">
+                                    <p><span style="text-decoration: line-through;">4.380000</span><span>đ</span></p>
+                                    <p><span style="color : red">2.680000</span><span>đ</span></p>
+                                </div>
+                                <div class="flex_product">
+                                    <button class="btn">
+                                        <i class="fa-solid fa-heart"></i>
+                                    </button>
+                                    <div class="stars_product">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                </div>
+                                <p>354 đã bán</p>
+                                <button class="button" onclick="Buy(),check_login()">ĐẶT HÀNG</button>
+                            </div>
+                        </div>
+
+                        <div class="product_item xiaomi phone">
+                            <img src="ảnh điện thoại/Xiaomi Redmi Note 11S.png">
+                            <div class="name_product">
+                                <a href="Chi tiết sản phẩm/Xiaomi Redmi Note 11S 5G.html">
+                                    <h3>Xiaomi Redmi Note 11S</h3>
+                                    <p>Tình Trạng : 97%</p>
+                                </a>
+                                <div class="unit_price">
+                                    <p><span style="text-decoration: line-through;">6.000000</span><span>đ</span></p>
+                                    <p><span style="color : red">5.320000</span><span>đ</span></p>
+                                </div>
+                                <div class="flex_product">
+                                    <button class="btn">
+                                        <i class="fa-solid fa-heart"></i>
+                                    </button>
+                                    <div class="stars_product">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                </div>
+                                <p>821 đã bán</p>
+                                <button class="button" onclick="Buy(),check_login()">ĐẶT HÀNG</button>
+                            </div>
+                        </div>
+
+                        <div class="product_item iphone phone">
+                            <img src="ảnh điện thoại/iPhone SE (2022).jpg">
+                            <div class="name_product">
+                                <a href="Chi tiết sản phẩm/iPhone SE 64GB.html">
+                                    <h3>iPhone SE (2022)</h3>
+                                    <p>Tình Trạng : 98%</p>
+                                </a>
+                                <div class="unit_price">
+                                    <p><span style="text-decoration: line-through;">10.000000</span><span>đ</span></p>
+                                    <p><span style="color : red">7.320000</span><span>đ</span></p>
+                                </div>
+                                <div class="flex_product">
+                                    <button class="btn">
+                                        <i class="fa-solid fa-heart"></i>
+                                    </button>
+                                    <div class="stars_product">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                </div>
+                                <p>899 đã bán</p>
+                                <button class="button" onclick="Buy(),check_login()">ĐẶT HÀNG</button>
+                            </div>
+                        </div>
+
+                        <div class="product_item oppo phone">
+                            <img src="ảnh điện thoại/OPPO Reno7 Z.jpg">
+                            <div class="name_product">
+                                <a href="Chi tiết sản phẩm/OPPO Reno7 Z 5G.html">
+                                    <h3>OPPO Reno7 Z </h3>
+                                    <p>Tình Trạng : 96%</p>
+                                </a>
+                                <div class="unit_price">
+                                    <p><span style="text-decoration: line-through;">6.500000</span><span>đ</span></p>
+                                    <p><span style="color : red">4.360000</span><span>đ</span></p>
+                                </div>
+                                <div class="flex_product">
+                                    <button class="btn">
+                                        <i class="fa-solid fa-heart"></i>
+                                    </button>
+                                    <div class="stars_product">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                </div>
+                                <p>1.987 đã bán</p>
+                                <button class="button" onclick="Buy(),check_login()">ĐẶT HÀNG</button>
+                            </div>
+                        </div>
+
+                        <div class="product_item oppo phone">
+                            <img src="ảnh điện thoại/OPPO A54.webp">
+                            <div class="name_product">
+                                <a href="Chi tiết sản phẩm/OPPO A54.html">
+                                    <h3>OPPO A54</h3>
+                                    <p>Tình Trạng : 80%</p>
+                                </a>
+                                <div class="unit_price">
+                                    <p><span style="text-decoration: line-through;">3.000000</span><span>đ</span></p>
+                                    <p><span style="color : red">1.900000</span><span>đ</span></p>
+                                </div>
+                                <div class="flex_product">
+                                    <button class="btn">
+                                        <i class="fa-solid fa-heart"></i>
+                                    </button>
+                                    <div class="stars_product">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                </div>
+                                <p>849 đã bán</p>
+                                <button class="button" onclick="Buy(),check_login()">ĐẶT HÀNG</button>
+                            </div>
+                        </div>
+
+                        <div class="product_item xiaomi phone">
+                            <img src="ảnh điện thoại/Xiaomi Redmi Note 10.png">
+                            <div class="name_product">
+                                <a href="Chi tiết sản phẩm/Xiaomi remi 10.html">
+                                    <h3>Xiaomi Redmi 10</h3>
+                                    <p>Tình Trạng : 84%</p>
+                                </a>
+                                <div class="unit_price">
+                                    <p><span style="text-decoration: line-through;">4.000000</span><span>đ</span></p>
+                                    <p><span style="color : red">2.860000</span><span>đ</span></p>
+                                </div>
+                                <div class="flex_product">
+                                    <button class="btn">
+                                        <i class="fa-solid fa-heart"></i>
+                                    </button>
+                                    <div class="stars_product">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                </div>
+                                <p>797 đã bán</p>
+                                <button class="button" onclick="Buy(),check_login()">ĐẶT HÀNG</button>
+                            </div>
+                        </div>
+
+                        <div class="product_item oppo phone">
+                            <img src="ảnh điện thoại/Oppo-A17.jpg">
+                            <div class="name_product">
+                                <a href="Chi tiết sản phẩm/Oppo A17.html">
+                                    <h3>OPPO A17</h3>
+                                    <p>Tình Trạng : 90%</p>
+                                </a>
+                                <div class="unit_price">
+                                    <p><span style="text-decoration: line-through;">3.900000</span><span>đ</span></p>
+                                    <p><span style="color : red">2.260000</span><span>đ</span></p>
+                                </div>
+                                <div class="flex_product">
+                                    <button class="btn">
+                                        <i class="fa-solid fa-heart"></i>
+                                    </button>
+                                    <div class="stars_product">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                </div>
+                                <p>693 đã bán</p>
+                                <button class="button" onclick="Buy(),check_login()">ĐẶT HÀNG</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="delivery">
+            <div class="main_delivery">
+                <div class="delivery_item">
+                    <div class="delivery_1">
+                        <h3>Miễn phí vận chuyển</h3>
+                        <p>Miễn phí với đơn hàng từ 3.000.000đ tại Hậu Giang và free ship toàn quốc với đơn hàng
+                            4.500.000đ.
+                        </p>
+                    </div>
+                    <div class="delivery_2">
+                        <h3>Đổi trả hàng miễn phí</h3>
+                        <p>Hệ thống chúng tôi hỗ trợ khách hàng đổi trả lại hàng hóa nếu có sai sót hay sự cố trong vòng
+                            1 tuần.</p>
+                    </div>
+                    <div class="delivery_3">
+                        <h3>Hỗ trợ khách hàng</h3>
+                        <p>Trung tâm chăm sóc khách hàng của chúng tôi, nếu có thắc mắc hãy gọi đến hotline 1900 3456
+                            7891 hỗ trợ giải đáp.</p>
+                    </div>
+                </div>
+                <div class="delivery_flex">
+                    <h1>
+                        <p class="p1">ĐẠI HẠ GIÁ, CƠ HỘI CHỈ MỘT LẦN</p>
+                        <p class="p1">GIẢM GIÁ LÊN ĐẾN</p>
+                        <p class="p2">35%</p>
+                        <p class="p1">Bắt đầu từ 20/07/2023 đến 01/10/2023</p>
+                    </h1>
+                </div>
+            </div>
+        </div>
+
+        <div class="Laptop" id="Laptop">
+            <div class="main_laptop">
+                <div class="namelaptop">
+                    <p>SẢN PHẨM LAPTOP CỦA ANH BA STORE</p>
+                </div>
+                <div class="logo_laptop">
+                    <a id="all">TẤT CẢ</a>
+                    <a id="DELL">DELL</a>
+                    <a id="HP">HP</a>
+                    <a id="ACER">ACER</a>
+                    <a id="GAMING">GAMING</a>
+                </div>
+            </div>
+            <div class="product_items">
+                <div class="product_item acer laptop">
+                    <img src="ảnh laptop/Acer Aspire 3 i3.jpg">
+                    <div class="name_product">
+                        <a href="Chi tiết sản phẩm/Acer Aspire 3.html">
+                            <h3>Acer Aspire 3 i3</h3>
+                            <p>Tình Trạng : 96%</p>
+                        </a>
+                        <div class="unit_price">
+                            <p><span style="text-decoration: line-through;">8.480000</span><span>đ</span></p>
+                            <p><span style="color : red">6.340000</span><span>đ</span></p>
+                        </div>
+                        <div class="flex_product">
+                            <button class="btn">
+                                <i class="fa-solid fa-heart"></i>
+                            </button>
+                            <div class="stars_product">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                        </div>
+                        <p>2.760 đã bán</p>
+                        <button class="button" onclick="Buy(),check_login()">ĐẶT HÀNG</button>
+                    </div>
+                </div>
+                <div class="product_item dell laptop">
+                    <img src="ảnh laptop/Dell Vostro 3400 i5.jpg">
+                    <div class="name_product">
+                        <a href="Chi tiết sản phẩm/Dell Vostro 3400 i5.html">
+                            <h3>Dell Vostro 3400 i5</h3>
+                            <p>Tình Trạng : 98%</p>
+                        </a>
+                        <div class="unit_price">
+                            <p><span style="text-decoration: line-through;">15.265000</span><span>đ</span></p>
+                            <p><span style="color : red">11.730000</span><span>đ</span></p>
+                        </div>
+                        <div class="flex_product">
+                            <button class="btn">
+                                <i class="fa-solid fa-heart"></i>
+                            </button>
+                            <div class="stars_product">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                        </div>
+                        <p>1.895 đã bán</p>
+                        <button class="button" onclick="Buy(),check_login()">ĐẶT HÀNG</button>
+                    </div>
+                </div>
+                <div class="product_item hp laptop">
+                    <img src="ảnh laptop/HP 240 G9 i5.jpeg">
+                    <div class="name_product">
+                        <a href="Chi tiết sản phẩm/HP 240 G9 i5.html">
+                            <h3>HP 240 G9 i5</h3>
+                            <p>Tình Trạng : 95%</p>
+                        </a>
+                        <div class="unit_price">
+                            <p><span style="text-decoration: line-through;">12.730000</span><span>đ</span></p>
+                            <p><span style="color : red">10.360000</span><span>đ</span></p>
+                        </div>
+                        <div class="flex_product">
+                            <button class="btn">
+                                <i class="fa-solid fa-heart"></i>
+                            </button>
+                            <div class="stars_product">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                        </div>
+                        <p>954 đã bán</p>
+                        <button class="button" onclick="Buy(),check_login()">ĐẶT HÀNG</button>
+                    </div>
+                </div>
+                <div class="product_item gaming acer laptop">
+                    <img src="ảnh laptop/6428_acer_nitro_5_amd_2021_an515_1.png">
+                    <div class="name_product">
+                        <a href="Chi tiết sản phẩm/Acer Nitro 5.html">
+                            <h3>Acer Nitro 5</h3>
+                            <p>Tình Trạng : 99%</p>
+                        </a>
+                        <div class="unit_price">
+                            <p><span style="text-decoration: line-through;">16.520000</span><span>đ</span></p>
+                            <p><span style="color : red">11.370000</span><span>đ</span></p>
+                        </div>
+                        <div class="flex_product">
+                            <button class="btn">
+                                <i class="fa-solid fa-heart"></i>
+                            </button>
+                            <div class="stars_product">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                        </div>
+                        <p>1.378 đã bán</p>
+                        <button class="button" onclick="Buy(),check_login()">ĐẶT HÀNG</button>
+                    </div>
+                </div>
+                <div class="product_item hp gaming laptop">
+                    <img src="ảnh laptop/HP-Pavilion Gaming 15-ec1052AX-laptop.jpg">
+                    <div class="name_product">
+                        <a href=" Chi tiết sản phẩm/HP Pavilion i3.html">
+                            <h3>HP Pavilion i3</h3>
+                            <p>Tình Trạng : 93%</p>
+                        </a>
+                        <div class="unit_price">
+                            <p><span style="text-decoration: line-through;">15.490000</span><span>đ</span></p>
+                            <p><span style="color : red">11.540000</span><span>đ</span></p>
+                        </div>
+                        <div class="flex_product">
+                            <button class="btn">
+                                <i class="fa-solid fa-heart"></i>
+                            </button>
+                            <div class="stars_product">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                        </div>
+                        <p>1.942 đã bán</p>
+                        <button class="button" onclick="Buy(),check_login()">ĐẶT HÀNG</button>
+                    </div>
+                </div>
+                <div class="product_item hp laptop">
+                    <img src="ảnh laptop/0.jpg">
+                    <div class="name_product">
+                        <a href="Chi tiết sản phẩm/HP 14s dq2550TU i7.html">
+                            <h3>HP 14s dq2550TU i7</h3>
+                            <p>Tình Trạng : 99%</p>
+                        </a>
+                        <div class="unit_price">
+                            <p><span style="text-decoration: line-through;">15.875000</span><span>đ</span></p>
+                            <p><span style="color : red">10.770000</span><span>đ</span></p>
+                        </div>
+                        <div class="flex_product">
+                            <button class="btn">
+                                <i class="fa-solid fa-heart"></i>
+                            </button>
+                            <div class="stars_product">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                        </div>
+                        <p>834 đã bán</p>
+                        <button class="button" onclick="Buy(),check_login()">ĐẶT HÀNG</button>
+                    </div>
+                </div>
+                <div class="product_item dell laptop">
+                    <img src="ảnh laptop/adbdb8db-3baf-4356-97a3-f8940e342d8c_1.0e6da2de25c170e30a00410b2f1aa263.jpeg">
+                    <div class="name_product">
+                        <a href="Chi tiết sản phẩm/Dell Inspiron 15 i5.html">
+                            <h3>Dell Inspiron 15 i5</h3>
+                            <p>Tình Trạng : 97%</p>
+                        </a>
+                        <div class="unit_price">
+                            <p><span style="text-decoration: line-through;">17.330000</span><span>đ</span></p>
+                            <p><span style="color : red">12.160000đ</span><span>đ</span></p>
+                        </div>
+                        <div class="flex_product">
+                            <button class="btn">
+                                <i class="fa-solid fa-heart"></i>
+                            </button>
+                            <div class="stars_product">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                        </div>
+                        <p>1.035 đã bán</p>
+                        <button class="button" onclick="Buy(),check_login()">ĐẶT HÀNG</button>
+                    </div>
+                </div>
+                <div class="product_item dell laptop">
+                    <img src="ảnh laptop/v5620_4304f2e92ebf4596b7937d1e658c174a.webp">
+                    <div class="name_product">
+                        <a href="Chi tiết sản phẩm/Dell Vostro 5620 i5.html">
+                            <h3>Dell Vostro 5620 i5</h3>
+                            <p>Tình Trạng : 98%</p>
+                        </a>
+                        <div class="unit_price">
+                            <p><span style="text-decoration: line-through;">17.800000</span><span>đ</span></p>
+                            <p><span style="color : red">14.970000</span><span>đ</span></p>
+                        </div>
+                        <div class="flex_product">
+                            <button class="btn">
+                                <i class="fa-solid fa-heart"></i>
+                            </button>
+                            <div class="stars_product">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                        </div>
+                        <p>956 đã bán</p>
+                        <button class="button" onclick="Buy(),check_login()">ĐẶT HÀNG</button>
+                    </div>
+                </div>
+                <div class="product_item gaming laptop">
+                    <img src="ảnh laptop/th.jpg">
+                    <div class="name_product">
+                        <a href="Chi tiết sản phẩm/Asus TUF Gaming i5.html">
+                            <h3>Asus TUF Gaming i5</h3>
+                            <p>Tình Trạng : 92%</p>
+                        </a>
+                        <div class="unit_price">
+                            <p><span style="text-decoration: line-through;">16.470000</span><span>đ</span></p>
+                            <p><span style="color : red">13.790000</span><span>đ</span></p>
+                        </div>
+                        <div class="flex_product">
+                            <button class="btn">
+                                <i class="fa-solid fa-heart"></i>
+                            </button>
+                            <div class="stars_product">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                        </div>
+                        <p>3.597 đã bán</p>
+                        <button class="button" onclick="Buy(),check_login()">ĐẶT HÀNG</button>
+                    </div>
+                </div>
+                <div class="product_item dell laptop">
+                    <img src="ảnh laptop/laptop-dell-vostro-3510-7t2yc2-1402-1.jpg">
+                    <div class="name_product">
+                        <a href="Chi tiết sản phẩm/Dell Vostro 3510 i3.html">
+                            <h3>Dell Vostro 3510 i3</h3>
+                            <p>Tình Trạng : 91%</p>
+                        </a>
+                        <div class="unit_price">
+                            <p><span style="text-decoration: line-through;">10.260000</span><span>đ</span></p>
+                            <p><span style="color : red">8.380.000</span><span>đ</span></p>
+                        </div>
+                        <div class="flex_product">
+                            <button class="btn">
+                                <i class="fa-solid fa-heart"></i>
+                            </button>
+                            <div class="stars_product">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                        </div>
+                        <p>1.265 đã bán</p>
+                        <button class="button" onclick="Buy(),check_login()">ĐẶT HÀNG</button>
+                    </div>
+                </div>
+                <div class="product_item acer laptop">
+                    <img src="ảnh laptop/c771f4c481c20dbc3179e9366918875f.jpg">
+                    <div class="name_product">
+                        <a href="Chi tiết sản phẩm/Acer Swift 3 i5.html">
+                            <h3>Acer Swift 3 i5</h3>
+                            <p>Tình Trạng : 99%</p>
+                        </a>
+                        <div class="unit_price">
+                            <p><span style="text-decoration: line-through;">19.940000đ</span><span>đ</span></p>
+                            <p><span style="color : red">15.870000</span><span>đ</span></p>
+                        </div>
+                        <div class="flex_product">
+                            <button class="btn">
+                                <i class="fa-solid fa-heart"></i>
+                            </button>
+                            <div class="stars_product">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                        </div>
+                        <p>1.575 đã bán</p>
+                        <button class="button" onclick="Buy(),check_login()">ĐẶT HÀNG</button>
+                    </div>
+                </div>
+                <div class="product_item hp laptop">
+                    <img src="ảnh laptop/pav.jpg">
+                    <div class="name_product">
+                        <a href="Chi tiết sản phẩm/HP Pavilion 15 i5.html">
+                            <h3>HP Pavilion 15 i5</h3>
+                            <p>Tình Trạng : 96%</p>
+                        </a>
+                        <div class="unit_price">
+                            <p><span style="text-decoration: line-through;">15.880000</span><span>đ</span></p>
+                            <p><span style="color : red">12.500000</span><span>đ</span></p>
+                        </div>
+                        <div class="flex_product">
+                            <button class="btn">
+                                <i class="fa-solid fa-heart"></i>
+                            </button>
+                            <div class="stars_product">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                        </div>
+                        <p>1.674 đã bán</p>
+                        <button class="button" onclick="Buy(),check_login()">ĐẶT HÀNG</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="information">
+            <p class="name_information">BÀI VIẾT - TIN TỨC</p>
+            <div class="main_information">
+                <div class="information_item">
+                    <img src="ảnh laptop/huong-dan-mua-may-tinh-xach-tay-choi-game-nc3.jpg">
+                    <a href="">
+                        <h3>Một số loại máy tính bạn dành cho game thủ</h3>
+                    </a>
+                    <p>Top những loại máy tính mà các anh em game thủ nhà ta cần phải biết đến để cùng bạn bè chiến
+                        những con game mà anh em yêu
+                        thích...</p>
+                </div>
+                <div class="information_item">
+                    <img src="ảnh laptop/wallhaven-0j2ev5.jpg" width="320px">
+                    <a href="">
+                        <h3>Điện thoại thông minh nào cấu hình ổn nhất?</h3>
+                    </a>
+                    <p>Điện thoại thông minh là một thứ không thể thiếu được trong thời đại 4.0 hiện nay, nhưng cấu hình
+                        ổn định nhất thời điểm hiện tại là...</p>
+                </div>
+                <div class="information_item">
+                    <img src="ảnh laptop/wallhaven-k71ljq.png">
+                    <a href="">
+                        <h3>Công nghệ thông tin là gì? có thú vị? Có gì hot?</h3>
+                    </a>
+                    <p>Công nghệ thông tin hiện nay là một trong những ngành siêu hot và có nhu cầu tìm kiếm việc làm
+                        rất cao, không lo sợ ra trường sẽ bị thất nghiệp...</p>
+                </div>
+                <div class="information_item">
+                    <img src="ảnh laptop/wallhaven-4od125.jpg" width="320px">
+                    <a href="">
+                        <h3>Điện thoại, laptop dành cho dân văn phòng</h3>
+                    </a>
+                    <p>Những chiếc điện thoại, laptop cho dân văn phòng 2011 đã dần nhường chỗ cho những mẫu điện thoại
+                        cho dân văn phòng 2022 hiện đại, thời thượng...</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer">
+            <div class="members_footer">
+                <div class="title_footer">
+                    <p>Sáng lập web</p>
+                </div>
+                <div class="photo_card_footer">
+                    <div>
+                        <div><img src="Members_photo/z3873872830251_6a54e933a7d57e390fcc9c371ca327e1.jpg"></div>
+                        <div>Tô Văn Hưởng</div>
+                    </div>
+                </div>
+            </div>
+            <div class="infor_footer">
+                <div class="question_footer">
+                    <h2> Những câu hỏi thường gặp: </h2>
+                    <div class="question_content_footer">
+                        <ul>
+                            <li><a href="question.html">Hình thức vận chuyển như thế nào?</a></li>
+                            <li><a href="question.html">Có bảo hành cho khách hàng hay không?</a></li>
+                            <li><a href="question.html">Thời gian giao hàng là bao lâu?</a></li>
+                            <li><a href="question.html">Nếu sản phẩm không chất lượng có được đổi trả hay là không?</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="address_footer">
+                    <h2>Địa chỉ</h2>
+                    <div class="address_content_footer">
+                        <div><i class="fa-solid fa-location-dot" style="color: red"></i> Anh Ba Store, Quốc lộ 61, Phụng
+                            Hiệp, Hậu Giang, Việt Nam</div>
+                        <div><i class="fa-brands fa-facebook" style="color: blue"></i> Facebook: Tô Văn Hưởng</div>
+                        <div><i class="fa-brands fa-github"></i> Github: 1902VanHuongCoder</div>
+                        <div> <i class="fa-solid fa-envelope" style="color: rgb(214, 160, 9)"></i> Email:
+                            huongb2105616@student.ctu.edu.vn</div>
+                        <div><i class="fa-solid fa-phone" style="color: rgb(241, 47, 12)"></i> Phone: 0334745377</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- //form dang nhap -->
+    <div id="login-window">
+        <div class="x-button-form-login">
+            <i class="fa-solid fa-x" id="x" onclick="hidden_form_login()"></i>
+        </div>
+        <div id="login-form">
+            <div class="eye-icon">
+                <i class="fa-solid fa-eye" onclick="showpass_login()"></i>
+                <i class="fa-solid fa-eye-slash" onclick="hidepass_login()"></i>
+            </div>
+            <form action="home.html" method="post" enctype="application/x-www-form-urlencoded" id="form"
+                onsubmit="return login();">
+                <div class="name-form-log-in">
+                    <h1>ĐĂNG NHẬP</h1>
+                </div>
+                <h3>Email</h3>
+                <input type="text" placeholder="Vui lòng nhập Email..." size="30" id="emaillog">
+                <h3>Mật khẩu</h3>
+                <input type="password" placeholder="Vui lòng nhập mật khẩu..." id="passlog">
+                <div class="bottom">
+                    <div class="bottom-wrapper">
+                        <button type="submit" onclick="infor_log()">Đăng nhập</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <!-- //from dang ki -->
+    <div id="register-window">
+        <div class="x-button-absolute">
+            <i class="fa-solid fa-x" class="x-button" onclick="hidden_form_register()"></i>
+        </div>
+        <div id="register-form">
+            <form action="home.html" method="post" enctype="application/x-www-form-urlencoded" id="form"
+                onsubmit="return register();">
+                <div class="name-form-wrapper">
+                    <h1 class="name-form">ĐĂNG KÍ </h1>
+                </div>
+                <div class="input-wrapper">
+                    <div class="email-icon">
+                        <i class="fa-solid fa-envelope"></i>
+                    </div>
+                    <div class="pass-icon">
+                        <i class="fa-solid fa-eye" onclick="showpass_register()"></i>
+                        <i class="fa-solid fa-eye-slash" onclick="hidepass_register()"></i>
+                    </div>
+                    <div class="pen-icon">
+                        <i class="fa-solid fa-pen"></i>
+                    </div>
+                    <h3>Email</h3>
+                    <input type="text" placeholder="Vui lòng nhập Email..." size="30" id="emailreg">
+                    <h3>Mật khẩu</h3>
+                    <input type="password" placeholder="Vui lòng nhập mật khẩu..." id="passreg">
+                    <h3>Nhập lại mật khẩu</h3>
+                    <input type="password" placeholder="Vui lòng nhập lại mật khẩu..." id="repassreg">
+                    <div class="bottom">
+                        <div class="button-wrapper">
+                            <button type="reset">Hủy</button>
+                            <button type="submit" onclick="infor()">Đăng kí</button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <!-- //don hang -->
+    <div class="donhang" id="don">
+        <button id="close" onclick="document.getElementById('don').style.display='none'">X</button>
+        <table>
+            <thead>
+                <tr>
+                    <th>Tên Sản Phẩm</th>
+                    <th>Hình Ảnh</th>
+                    <th>Giá</th>
+                    <th>Số Lượng</th>
+                    <th>Xóa</th>
+                </tr>
+            </thead>
+            <tbody id="tbody">
+            </tbody>
+        </table>
+        <div class="price-total">
+            <span class="cost"> </span>
+            <div class="button-buy-now">
+                <button type="button" id="buy-now" onclick="check_login_buy(),total()">Mua ngay</button>
+            </div>
+        </div>
+    </div>
+    <!-- Form để người dùng điền thông tin mua hàng! -->
+    <div class="infor-card-wrapper">
+        <div class="x-button-infor-form">
+            <i class="fa-solid fa-x" class="x-button" onclick="hidden_form_infor()"></i>
+        </div>
+        <div class="infor-form">
+            <div class="infor-name"> Nhập thông tin mua hàng</div>
+            <div class="infor-input">
+                <form action="" name="frm">
+                    <table>
+                        <tbody>
+                            <tr>
+                                <td>Họ và tên</td>
+                                <td><input name="name" type="text" required minlength="10" placeholder="Họ và tên..."></td>
+                            </tr>
+                            <tr>
+                                <td>SDT</td>
+                                <td><input type="text" name="sdt" required minlength="11" placeholder="Số điện thoại..."></td>
+                            </tr>
+                            <tr>
+                                <td>Địa chỉ nhận hàng</td>
+                                <td><input type="text" name="address" placeholder="Địa chỉ của bạn..." required></td>
+                            </tr>
+                            <tr>
+                                <td>Phương thức thanh toán</td>
+                                <td>
+                                    <select name="" id="">
+                                        <option value="">Trực tiếp</option>
+                                        <option value="">Thẻ tín dụng</option>
+                                        <option value="">Ví momo</option>
+                                        <option value="">Zalo Pay</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Tổng tiền</td>
+                                <td id="infor-price-total"></td>
+                            </tr>
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <td>
+                                    <button type="button" onclick="accept(), display_form_infor_costumer()">Xác nhận</button>
+                                    <button type="reset">Hủy</button>
+                                </td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="infor-costumer">
+        <div class="infor-costumer-wrapper">
+            <div class="name_form_infor_costumer">Xác nhận thông tin của bạn</div>
+            <div class="form_infor_costumer">
+                <form action="" name="frm1">
+                    <table>
+                        <tr>
+                            <td>Tên</td>
+                            <td id="name_costumer" name="name5"></td>
+                        </tr>
+                        <tr>
+                            <td>SDT</td>
+                            <td id="phone_number" name="sdt"></td>
+                        </tr>
+                        <tr>
+                            <td>Địa chỉ:</td>
+                            <td id="address_costumer" name="address"></td>
+                        </tr>
+                        <tr>
+                            <td>Tổng tiền</td>
+                            <td id="price_total_costumer" name="price"></td>
+                        </tr>
+                        <tr>
+                            <td colspan="2"><input onclick="hidden_form_infor_costumer()" type="button" value="Xác nhận"></td>
+                        </tr>
+                    </table>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script>
+        /*điện thoại*/
+        $(document).ready(function () {
+            $("#All").click(function () {
+                $("div.phone").show();
+            });
+        });
+        $(document).ready(function () {
+            $("#Iphone").click(function () {
+                $("div.phone").hide();
+                $(".iphone").show();
+            });
+        });
+        $(document).ready(function () {
+            $("#Samsung").click(function () {
+                $("div.phone").hide();
+                $(".samsung").show();
+            });
+        });
+        $(document).ready(function () {
+            $("#Oppo").click(function () {
+                $("div.phone").hide();
+                $(".oppo").show();
+            });
+        });
+        $(document).ready(function () {
+            $("#Xiaomi").click(function () {
+                $("div.phone").hide();
+                $(".xiaomi").show();
+            });
+        });
+        /*laptop*/
+        $(document).ready(function () {
+            $("#all").click(function () {
+                $("div.laptop").show();
+            });
+        });
+        $(document).ready(function () {
+            $("#ACER").click(function () {
+                $("div.laptop").hide();
+                $(".acer").show();
+            });
+        });
+        $(document).ready(function () {
+            $("#DELL").click(function () {
+                $("div.laptop").hide();
+                $(".dell").show();
+            });
+        });
+        $(document).ready(function () {
+            $("#HP").click(function () {
+                $("div.laptop").hide();
+                $(".hp").show();
+            });
+        });
+        $(document).ready(function () {
+            $("#GAMING").click(function () {
+                $("div.laptop").hide();
+                $(".gaming").show();
+            });
+        });
+    </script>
+    <script src='donhang.js'></script>
+    <script src="https://code.jquery.com/jquery-3.6.1.js"
+        integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI="></script>
+    <script src='home.js'></script>
+</body>
+
+</html>

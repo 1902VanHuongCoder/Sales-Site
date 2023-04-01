@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Giải Đáp Thắc Mắc</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="stylesheet" href="../home.css">
+    <link rel='stylesheet' type='text/css' media='screen' href='question.css'>
+    <script src='jquery.js'></script>
+</head>
+
+<body>
+    <header>
+        <div class="more" id="more"><i class="fa-solid fa-list"></i></div>
+        <div class="navigation-wrap" id="navigation-wrap">
+            <div class="navigation">
+                <div class="navigation-logo">
+                    <div class="img"><img src="Logo-removebg-preview.png"></div>
+                    <div class="navigation-form">
+                        <form action="search.html" method="get">
+                            <input type="text" id="search" name="search" placeholder=" Search...">
+                            <i onclick="search()" class="fa fa-search"></i>
+                        </form>
+                    </div>
+                </div>
+                <div class="navigation-content">
+                    <div><a href="home.html">Trang chủ</a></div>
+                    <div><a href="#main_product">Giảm giá</a></div>
+                    <div><a href="#main_phone">Điện thoại</a></div>
+                    <div><a href="#Laptop">Laptop</a></div>
+                    <div><a href="http://127.0.0.1:5500/lienhe.html">Liên hệ</a></div>
+                    <div onclick="activited_register(),hidden_form_login()" class="cursor-pointer"><a>Đăng ký</a></div>
+                    <div onclick="activited_login(),hidden_form_register()" class="cursor-pointer"><a>Đăng nhập</a>
+                    </div>
+                    <div class="click" id="don_hang" onclick="document.getElementById('don').style.display='block'">
+                        <button onclick="Cancle()"><i class="fa-solid fa-cart-shopping"></i></button>
+                        <div id="clicked"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="main_question">
+            <div class="subject">
+                <h2>CHÍNH SÁCH VẬN CHUYỂN <i class="fa-solid fa-thumbs-up"></i></h2>
+            </div>
+            <div class="question">
+                <div class="question1">
+                    <h3>1. LƯU Ý :</h3>
+                    <p>- Sau khi bạn đặt hàng, trong vòng 1h giờ làm việc chúng tôi sẽ liên lạc lại để xác nhận và kiểm
+                        tra thông tin.</p>
+                    <p>- Những rủi ro phát sinh trong quá trình giao hàng như (va đập, ẩm ướt, tai nạn..) có thể ảnh
+                        hưởng đến hàng hóa, vì thế xin Quý Khách vui lòng <span>kiểm tra hàng hóa thật kỹ trước khi ký
+                            nhận.</span>
+                        Chúng tôi sẽ không chịu trách nhiệm với những sai lệch, phản hồi sau khi khách hàng đã nhận từ
+                        người giao hàng (Người giao hàng đã hoàn thành đơn hàng, đã rời khỏi nơi giao hàng).</p>
+                </div>
+                <div class="question2">
+                    <h3>2. BẢNG GIÁ DỊCH VỤ GIAO HÀNG :</h3>
+                    <div class="gird_question">
+                        <div class="grid_unit-price">
+                            <h4>Theo Đơn Giá Đơn Hàng</h4>
+                            <p>1. Từ 2.000.000đ - 4.500.000đ</p>
+                            <p>2. Từ 6.000.000đ - 8.000.000đ</p>
+                            <p>3. Từ 9.000.000đ - 11.900.000đ</p>
+                            <p>4. Từ 12.000.000đ - 13.900.000đ</p>
+                            <p>5. Từ 14.000.000đ - 15.900.000đ</p>
+                        </div>
+                        <div class="grid_unit-price">
+                            <h4>Số Km Miễn Phí</h4>
+                            <p>20km</p>
+                            <p>40km</p>
+                            <p>80km</p>
+                            <p>150km (Theo thỏa thuận)</p>
+                            <p>>150km (Theo thỏa thuận)</p>
+                        </div>
+                        <div class="grid_unit-price">
+                            <h4>Thời Gian Giao Hàng</h4>
+                            <p>Trong vòng 24h</p>
+                            <p>Trong vòng 48h</p>
+                            <p>Trong vòng 4 ngày</p>
+                            <p>Trong vòng 1 tuần</p>
+                            <p>Trong vòng 1 tuần</p>
+                        </div>
+                        <div class="grid_unit-price">
+                            <h4>Thu Phí</h4>
+                            <p>1. Từ 1-20km Thu phí là 25.000đ.</p>
+                            <p>2. Từ km số 30 thêm 10k/1km</p>
+                            <p>3. Từ km số 40, thêm 20k/1km</p>
+                            <p>4. Từ km số 60 thêm 25k/1km</p>
+                            <p>5. Theo giá thỏa thuận</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="guarantee">
+            <div class="grid_guarantee">
+                <div class="guarantee_item">
+                    <p><i class="fa-solid fa-truck"></i> Thời Gian Ship Hàng</p>
+                    <p>Thời gian ship hàng từ 7h - 20h hàng ngày (ngoại trừ những ngày lễ).</p>
+                </div>
+                <div class="guarantee_item guarantee_border">
+                    <p><i class="fa-solid fa-gear"></i> Bảo Hành Trong Vòng 14 Ngày</p>
+                    <p>Chính sách bảo hành là trọng tâm chiến lược luôn ưu tiên hàng đầu.</p>
+                </div>
+                <div class="guarantee_item guarantee_border">
+                    <p><i class="fa-solid fa-handshake"></i> Đảm Bảo Chất Lượng 100% </p>
+                    <p>Shop chúng tôi đảm bảo uy tính và rất đáng tin cậy.</p>
+                </div>
+                <div class="guarantee_item guarantee_border">
+                    <p><i class="fa-solid fa-phone-volume"></i> Hotline </p>
+                    <p>Hỗ trợ 24/7. 0334745377</p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="footer">
+            <div class="infor_footer">
+                <div class="question_footer">
+                    <h2> Những câu hỏi thường gặp: </h2>
+                    <div class="question_content_footer">
+                        <ul>
+                            <li><a href="question.html">Hình thức vận chuyển như thế nào?</a></li>
+                            <li><a href="question.html">Có bảo hành cho khách hàng hay không?</a></li>
+                            <li><a href="question.html">Thời gian giao hàng là bao lâu?</a></li>
+                            <li><a href="question.html">Nếu sản phẩm không chất lượng có được đổi trả hay là không?</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="address_footer">
+                    <h2>Địa chỉ</h2>
+                    <div class="address_content_footer">
+                        <div><i class="fa-solid fa-location-dot" style="color: red"></i> Anh Ba Store, Quốc lộ 61, Phụng
+                            Hiệp, Hậu Giang, Việt Nam</div>
+                        <div><i class="fa-brands fa-facebook" style="color: blue"></i> Facebook: Tô Văn Hưởng</div>
+                        <div><i class="fa-brands fa-github"></i> Github: 1902VanHuongCoder</div>
+                        <div> <i class="fa-solid fa-envelope" style="color: rgb(214, 160, 9)"></i> Email:
+                            huongb2105616@student.ctu.edu.vn</div>
+                        <div><i class="fa-solid fa-phone" style="color: rgb(241, 47, 12)"></i> Phone: 0334745377</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src='home.js'></script>
+</body>
+
+</html>
