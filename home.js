@@ -1,4 +1,3 @@
-
 accept();
 function hidden_form_register() {
     document.getElementById("register-window").style.display = 'none'

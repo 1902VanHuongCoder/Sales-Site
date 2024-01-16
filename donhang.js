@@ -1,4 +1,3 @@
-
 const btn = document.querySelectorAll('.name_product  button')
 console.log(btn)
 btn.forEach(function (btn, index) {
@@ -9,11 +8,8 @@ btn.forEach(function (btn, index) {
         console.log(dad)
         var pic = dad.parentElement.querySelector('img').src
         console.log(pic)
-        
         var ten = dad.querySelector('h3').innerHTML
         console.log(ten)
-        
-        
         var dadgia = dad.querySelector('.unit_price').lastElementChild
          gia= dadgia.querySelector('span').innerHTML
         console.log(gia)
@@ -27,13 +23,10 @@ function addcart(pic, ten, gia) {
     var card = document.querySelectorAll('#tbody tr')
     for (i = 0; i < card.length; i++) {
         var name = document.querySelectorAll('.name-buy')
-        //console.log(name[i].innerHTML)
         if (name[i].innerHTML == ten) {
             var sl = card[i].querySelector('input').value
-
             card[i].querySelector('input').value = ++sl
             return
-
         }
     }
     var trcontent = '<tr><td class="name-buy">' + ten + '</td><td><img src="' + pic + '" width="50px"></td><td><span style="font-weight:bold">' + gia + '</span><td><input type="number" style="width: 30px ; outline: none;" onchange="total()"  value="1" min="0"></td><td><button class="delete" style="background-color:#ee4d2d; border: 1px solid #ccaeae; border-radius: 5px; padding: 5px;  color: #fff">xóa</button></td></tr>'
@@ -42,11 +35,11 @@ function addcart(pic, ten, gia) {
     carttable.append(addtr)
     deletecard()
 }
+
 function total() {
     var cartitem = document.querySelectorAll('#tbody tr')
     var total = 0;
     for (var i = 0; i < cartitem.length; i++) {
-        //console.log(i)
         var input = cartitem[i].querySelector("input").value
         console.log(input)
         var cost = cartitem[i].querySelector('span').innerHTML
@@ -63,6 +56,7 @@ function total() {
     var price_total_costumer = document.getElementById("price_total_costumer");
     price_total_costumer.innerHTML = + total + "triệu VND";
 }
+
 function deletecard(){
 const deletebtn = document.querySelectorAll('.delete')
 console.log(deletebtn)
@@ -79,6 +73,7 @@ deletebtn.forEach(function (btn, index) {
 }
 
 /*******************************************************Mua ngay button**************************************************/
+
 var buynow = document.getElementById("buy-now");
 var tbody = document.getElementById("tbody");
 buynow.addEventListener("click", function(event){
